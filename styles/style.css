@@ -132,7 +132,7 @@
   align-items: center;
 }
 
-.section__title {
+.section-title {
   width: 60%;
   margin: 100px auto 20px auto;
   text-align: center;
@@ -141,7 +141,7 @@
   font-weight: bold;
 }
 
-.section__subtitle {
+.section-subtitle {
   width: 60%;
   margin: 0px;
   text-align: center;
@@ -190,9 +190,6 @@
   flex-direction: column;
   margin: 0px auto;
   background-color: #f2f2f2;
-}
-
-.feynman__image {
   background-image: url(../images/feynman.png);
   background-repeat:no-repeat;
   background-position: left bottom;
@@ -225,17 +222,8 @@
   right: 48px;
   position: absolute;
   text-decoration: none;
-  text-decoration-color: #2f80ed;
+  color: #2f80ed;
 }
-
-/* .feynman__illustration_img {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  width: 867px;
-  height: 637px;
-  z-index: -2;
-} */
 
 .kaufman {
   display: flex;
@@ -245,13 +233,29 @@
   overflow: hidden;
   background-color: #1f1f1f;
 }
+/* .kaufman_triangle {
+  position: absolute;
+  right: -210px;
+  width: 877px;
+  z-index: 1;
+} */
+/*  */
+.kaufman__triangle {
+  position: absolute;
+  top: 0px;
+  right: -210px;
+  width: 877px;
+  height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
+}
 
-.section__title_theme_dark {
+.section-title_theme_dark {
   margin: 90px auto 20px auto;
   color: white;
 }
 
-.section__subtitle_theme_dark {
+.section-subtitle_theme_dark {
   color: white;
 }
 
@@ -272,20 +276,6 @@
 color: white;
 }
 
-/* .kaufman_triangle {
-  position: absolute;
-  right: -210px;
-  width: 877px;
-  z-index: 1;
-} */
-
-.kaufman_triangle {
-  background-image: url(../images/kaufman-triangle.svg);
-  background-repeat:no-repeat;
-  background-position: right -210px top;
-  background-size: 877px 877px;
-}
-
 .footer {
   display: flex;
   position: relative;
@@ -301,11 +291,12 @@ color: white;
   margin: 60px auto 40px auto;
 }
 
-.footer__columns_content_copyright {
+.footer__column_content_copyright {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-basis: 711px;
+  min-height: inherit;
 }
 
 .footer__author {
@@ -319,11 +310,13 @@ color: white;
 .footer__column_content_social {
   display: flex;
   flex-direction: column;
+  min-height: inherit;
 }
 
-.footer__columns_content_info {
+.footer__column_content_info {
   display: flex;
   flex-direction: column;
+  min-height: inherit;
 }
 
 .footer__column-heading {
