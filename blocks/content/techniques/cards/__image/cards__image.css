@@ -1,0 +1,11 @@
+.cards__image {
+  border: 1px solid seagreen;
+  display: flex;
+  width: 160px;
+  height: 160px;
+  margin: 0 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: none;
+}
+
