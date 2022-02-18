@@ -1,5 +1,5 @@
 @import url(../vendor/normalize.css);
-@import url(../blocks/root/root.css);
+@import url(../blocks/page/page.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title/header__title.css);
 @import url(../blocks/logo/logo.css);
@@ -26,7 +26,7 @@
 @import url(../blocks/feynman/__subtitle/feynman__subtitle.css);
 @import url(../blocks/feynman/__link/feynman__link.css);
 @import url(../blocks/kaufman/kaufman.css);
-@import url(../blocks/kaufman/__triangel/kaufman__triangel.css);
+@import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
 @import url(../blocks/section-title/_theme/section-title_theme_dark.css);
 @import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
 @import url(../blocks/table/_theme/table_theme_dark.css);
